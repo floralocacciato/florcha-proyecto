@@ -1,0 +1,34 @@
+<p>registro works!</p>
+
+<p>
+    <!--Nombre de usuario-->
+    <mat-form-field appearance="fill">
+      <mat-label>Ingrese nombre de usuario: </mat-label>
+      <input matInput placeholder="Placeholder">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    
+    </mat-form-field>
+     <!--Apellido de usuario-->
+     <mat-form-field appearance="fill">
+        <mat-label>Ingrese su apellido: </mat-label>
+        <input matInput placeholder="Placeholder">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      
+      </mat-form-field>
+       <!--Email de usuario-->
+    <mat-form-field appearance="fill">
+        <mat-label>Ingrese su email: </mat-label>
+        <input matInput placeholder="Placeholder">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        
+      </mat-form-field>
+      
+        <mat-form-field>
+          <mat-label>Ingrese su contraseña</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+  </p>
+  
